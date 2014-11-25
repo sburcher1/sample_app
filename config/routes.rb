@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+root :to => 'pages#landing_page'
+    
+    
   get 'pages/landing_page'
 
   get 'pages/contact'
