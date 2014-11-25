@@ -1,0 +1,224 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	 -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: 'lato';
+  line-height: 1.5;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Lato';
+
+}
+/* DARK PURPLE #3C225A */
+/* MEDIUM PURPLE #513576 */
+/* LIGHT PURPLE #705699 */
+
+
+
+/* BUTTONS */
+
+.btn {
+	border-radius: 3%;
+}
+
+
+
+.headerbar {
+	height: 5em;
+   background: #705699;
+   background: -webkit-linear-gradient(to right, #705699, #ffffff);
+   background: -moz-linear-gradient(to right, #705699, #ffffff);
+   background: linear-gradient(to right, #705699, #ffffff);
+}
+
+
+.headerbar h2, .headerbar h3, .headerbar h1 {
+	 color: #ffffff;
+	 font-weight: 300;
+}
+
+.headerbar .container {
+	padding: 0em;
+}
+
+
+
+/* GENERAL FORMATTING */
+
+
+.paddingtop {
+	padding-top: 22px;
+}
+
+.paddingtop44 {
+	padding-top: 44px;
+}
+.paddingbottom {
+	padding-bottom: 22px;
+}
+
+.paddingbottom44 {
+	padding-bottom: 44px;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.centretext h4, .centretext p, .centretext h2 {
+	text-align: center;
+}
+
+.backgroundgrey {
+	background-color: #f2f2f2;
+}
+
+
+/* HOME PAGE */
+
+.carousel h1{ color: #ffffff; }
+.carousel p { color: #ffffff; }
+
+.carousel-caption {
+	margin: 0 auto; 
+	height: 290px;
+}
+
+.carousel-height {
+	min-height: 320px;
+}
+
+
+.homeicon {
+	max-height: 70px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 22px;
+	margin-top: 22px;
+}
+
+.subjumbo {
+
+	padding: 0 15px;
+}
+
+.subjumbo h2 {
+	text-align: center;
+
+	font-weight: 300;
+}
+
+.subjumbo p {
+	text-align: center;
+}
+
+.subjumbo img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-height: 260px;
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.anchor {
+	padding-top: 40px;
+	margin-top: -40px;
+}
+
+
+/* FEATURES */
+
+
+.vc-outer {
+	position: relative;
+}
+
+.vc-inner {
+	position:absolute; 
+	top:50%; 
+	height:20em; 
+	margin-top:7em;
+}
+
+.featuretext p {
+	text-align: center;
+}
+
+.featureimg img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 20em;
+	margin-top: 22px;
+	margin-bottom: 22px;
+	vertical-align: middle;
+}
+
+
+.jumbotron {
+	background: url(img/splash42.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 35em;
+}
+.table {
+	display: table;
+}
+
+
+.vertalign{
+	display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.jumbotron h1, .jumbotron h2, .jumbotron p {
+	color: white;
+	text-align: center;
+	font-family: 'lato';
+}
+
+.jumbotron p {
+	font-size: 18px;
+}
+
+.centreblock {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+/* ABOUT US */
+
+
+.about-us .lead p {
+	font-size: 60px;
+}
+
+.panel-title {
+	text-decoration: none;
+	font-weight: 300;
+}
+
+.panel-default > .panel-heading {
+	background-color: #efefef;
+}
+
+
+
+
+
+
+
+
