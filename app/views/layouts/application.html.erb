@@ -21,13 +21,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <a class="navbar-brand" href="index.html">RESEARCH24</a>
+            <a class="navbar-brand" href="index.html">RESEARCH24</a> 
         </div>
         <div class="navbar-collapse collapse">
 
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="features.html">How It Works</a></li>
+            <li><%= link_to "Home", pages_landing_page_path %></li>
+            <li class="active"><a href="http://research24.bitballoon.com/features.html">How It Works</a></li>
           </ul>
 
           <form class="navbar-form navbar-right" role="form">
@@ -55,8 +55,8 @@
 
       <footer>
         <ul class="list-inline">
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><%= link_to "About Us", pages_about_path %></li>
+          <li><%= link_to "Contact", pages_contact_path %></li>
           <li><a href="faq.html">FAQs</a></li>
           <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">Privacy Policy</a></li>          
         </ul>
