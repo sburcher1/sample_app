@@ -97,6 +97,26 @@
 
         <div class="col-md-2 col-sm-1 col-xs-0"></div>
 
+    </div>  
+  <hr>
+</div> <!-- /subjumbo -->
+
+
+<!-- FEATURED PRODUCT SUBJUMBO -->
+
+<div class="container-fluid">
+    <div class="subjumbo row">
+        
+        <div class="col-md-2 col-sm-1 col-xs-0"></div>
+        
+        <div class="col-md-8 col-sm-10 col-xs-12">
+            <h2>Featured Research Option.</h2>
+            <p><%= link_to @featured_product.name, @featured_product %></p>
+            <img src=<%= @featured_product.image_url %> alt="Product Image" height="130" width="130">
+        </div>
+
+        <div class="col-md-2 col-sm-1 col-xs-0"></div>
+
     </div>
 </div> <!-- /subjumbo -->
 
