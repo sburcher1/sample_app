@@ -1,0 +1,497 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fea",
+				"featured_product"
+			],
+			[
+				"img",
+				"Image"
+			],
+			[
+				"j",
+				"jpg"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"h",
+				"h4"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backg",
+				"background-repeat"
+			],
+			[
+				"tr",
+				"text-transform"
+			],
+			[
+				"header",
+				"headerbar"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"heigh",
+				"height"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"margn",
+				"margin-top"
+			],
+			[
+				"ma",
+				"max-width"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"height",
+				"max-height"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"p",
+				"p"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"l",
+				"label	Tag"
+			],
+			[
+				"left",
+				"margin-left"
+			],
+			[
+				"speaker",
+				"speaker-info"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"r",
+				"border-radius"
+			],
+			[
+				"sec",
+				"section	Tag"
+			],
+			[
+				"bn",
+				"btn-alt"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"prima",
+				"primary-footer"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"botto",
+				"border-bottom"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"inl",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1805,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 2402,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/pages_controller.rb",
+			"settings":
+			{
+				"buffer_size": 154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/pages/landing_page.html.erb",
+			"settings":
+			{
+				"buffer_size": 5969,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"se",
+				"Set Syntax: HTML (Erlang)"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sburcher1/Desktop/sample_app/app/views/products/index.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/controllers/products_controller.rb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/products/show.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/products/edit.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/layouts/application.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/controllers/pages_controller.rb",
+		"/Users/sburcher1/Desktop/sample_app/app/models/product.rb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/pages/landing_page.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/products/_form.html.erb",
+		"/Users/sburcher1/Desktop/sample_app/app/views/products/new.html.erb",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/index.html",
+		"/Users/sburcher1/Desktop/sample_app/app/assets/stylesheets/styles.css.scss.css",
+		"/Users/sburcher1/Desktop/sample_app/test.rb",
+		"/Users/sburcher1/Desktop/sample_app/ruby test.rb",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/aboutus.html",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/contact.html",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/jquerytest.html",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/faq.html",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/features.html",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/styles.css",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/js/scripts.js",
+		"/Users/sburcher1/Google Drive/WEB DEV PROJECTS/Research24/parallax.html",
+		"/Users/sburcher1/Desktop/My Website/index.html",
+		"/Users/sburcher1/Desktop/Web Dev Training/Styles Conference Website/Validatum.sublime-workspace",
+		"/Users/sburcher1/Desktop/My Website/main.css",
+		"/Users/sburcher1/Desktop/My Website/Validatum.sublime-project",
+		"/Users/sburcher1/Desktop/My Website/site.css",
+		"/Users/sburcher1/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"new_product_path",
+			"h2",
+			"2",
+			"margin",
+			"panel",
+			"textblock",
+			"col-lg-4",
+			"col-md-4",
+			"table",
+			"td",
+			"table",
+			"row",
+			"hover",
+			"hober",
+			"row",
+			"}\n",
+			"h1",
+			"h2",
+			"row",
+			"roew",
+			"primaryna",
+			"row",
+			"btn-alt",
+			"\nConference",
+			"Conference"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 2402,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2053,
+								2053
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 256.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/pages_controller.rb",
+					"settings":
+					{
+						"buffer_size": 154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/pages/landing_page.html.erb",
+					"settings":
+					{
+						"buffer_size": 5969,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1186.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/sburcher1/Desktop/My Website/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true
+}
