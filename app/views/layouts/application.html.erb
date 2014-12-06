@@ -21,4 +21,13 @@
 <%= render 'layouts/footer' %>
 
 </body>
+
+<% flash.each do |key, value| %>
+  <% if key == 'alert' %>    
+      <div class="alert alert-danger flashalert"><%=value%></div>
+  <% elsif key == 'notice' %>    
+      <div class="alert alert-success flashalert"><%=value%></div>
+  <% end %>
+<% end %>
+
 </html>
