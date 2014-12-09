@@ -16,6 +16,7 @@ root :to => 'pages#landing_page'
 
   get 'form_output', to: 'form_example#form_output'
 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
