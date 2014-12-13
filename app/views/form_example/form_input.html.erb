@@ -1,30 +1,84 @@
-       
-<div class="container paddingtop">
-<div class="row">
-<div class="col-md-4">
+<div class="container-fluid headerbar">
+  <div class="container">
+    <div class="col-md-12">
+        
+        <h2>Get in touch</h2>
+
+    </div>
+  </div>
+  </div>     
 
 
-  <form action="/form_output">
-    <div class="form-group">
-      <label for="contactformname">Name</label>
-      <input type="text" class="form-control" id="contactformname" placeholder="Name" required="required" name="name">
-    </div>
-    <div class="form-group">
-      <label for="contactformemail">Email Address</label>
-      <input type="email" class="form-control" id="contactformemail" placeholder="Email Address" required="required" name="email">
-    </div>
-    <div class="form-group">
-      <label for="contactformcompany">Company</label>
-      <input type="text" class="form-control" id="contactformcompany" placeholder="Company" name="company">
-    </div>
-    <div class="form-group">
-      <label for="contactformmessage">Message</label>
-      <textarea class="form-control" rows="3" id="contactformmessage" placeholder="Message" required="required" name="message"></textarea>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form> 
+      <!-- HEADERBAR -->
 
 
-</div>
-</div>
-</div>
+    <div class="container paddingtop">
+
+      <p class="lead">Call our 24-hour support line, or drop us an email with any of your questions and we'll respond promptly!</p>
+
+      <div class="row paddingtop">
+
+        <div class="col-md-4">
+
+<!-- CONTACTFORM -->
+
+
+<%= form_tag(form_output_path) do %>
+    <div class="form group">
+        <%= label_tag 'name', 'Name' %>
+        <%= text_field_tag 'name', nil, placeholder: 'Your Name', :class=> 'form-control', :required => 'required' %>
+    </div>
+   <div class="form group">
+       <%= label_tag 'email', 'Email' %>
+       <%= email_field_tag 'email', nil, placeholder: 'Your Email Address', :class => 'form-control', :required => 'required' %>
+   </div>
+   <div class="form group">
+       <%= label_tag 'message', 'Message' %>
+       <%= text_area_tag 'message', nil, rows: 4, placeholder: 'Message...', :class =>'form-control', :required=> 'required' %>
+   </div>
+   <%= submit_tag "Submit" %>
+<% end %>
+
+<!-- /Contactform -->
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-5">
+
+
+<!-- CONTACTDETAILS -->
+
+          <address>
+            <strong>Research24 Ltd</strong><br>
+            44 Lowry House, Canary Wharf
+            London, E14 9LL<br>
+            Phone: +44 7770 937-165
+          </address>
+          <address>
+            <p>
+              <span class="glyphicon glyphicon-envelope"></span>
+              &nbsp;&nbsp;<strong>General Contact:</strong>&nbsp;
+              <a href="mailto:contact@task.ly">contact@research24.com</a> 
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-earphone"></span>
+              &nbsp;&nbsp;<strong>Customer Support:</strong>&nbsp;
+              <a href="mailto:support@task.ly">support@research24.com</a> 
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-briefcase"></span>
+              &nbsp;&nbsp;<strong>Job Inquiries:</strong>&nbsp;
+              <a href="mailto:jobs@task.ly">jobs@research24.com</a> 
+            </p>
+          </address> <!-- ContactDetails -->
+
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.8237200718104!2d-0.02215350000000254!3d51.4981023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602bf40feeee9%3A0xa0c470e733600895!2sLowry+House%2C+Cassilis+Rd%2C+Isle+of+Dogs%2C+London+E14+9LL!5e0!3m2!1sen!2suk!4v1416138520344" width="450" height="300" frameborder="0" style="border:0"></iframe>
+
+
+        </div>
+
+      </div>

@@ -12,9 +12,9 @@ root :to => 'pages#landing_page'
 
   
 
-  get 'form_input', to: 'contact#form_input'
+  get 'form_input', to: 'form_example#form_input'
 
-  get 'form_output', to: 'contact#form_output'
+  post 'form_output', to: 'form_example#form_output'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
