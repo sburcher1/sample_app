@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :products
 
 root :to => 'pages#landing_page'
@@ -12,9 +13,9 @@ root :to => 'pages#landing_page'
 
   
 
-  get 'form_input', to: 'form_example#form_input'
+  get 'contact_input', to: 'contact#contact_input'
 
-  post 'form_output', to: 'form_example#form_output'
+  post 'contact_output', to: 'contact#contact_output'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

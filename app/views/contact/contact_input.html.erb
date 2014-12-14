@@ -23,7 +23,7 @@
 <!-- CONTACTFORM -->
 
 
-<%= form_tag(form_output_path) do %>
+<%= form_tag(contact_output_path) do %>
     <div class="form group">
         <%= label_tag 'name', 'Name' %>
         <%= text_field_tag 'name', nil, placeholder: 'Your Name', :class=> 'form-control', :required => 'required' %>

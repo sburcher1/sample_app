@@ -1,8 +1,8 @@
-class FormExampleController < ApplicationController
-	def form_input
+class ContactController < ApplicationController
+	def contact_input
 
 	end
-	def form_output
+	def contact_output
 		@name = params[:name]
 		@email = params[:email]
 		@message = params[:message]
@@ -10,6 +10,5 @@ class FormExampleController < ApplicationController
 			:to => 'sburcher1@gmail.com', 
 			:subject => "A new contact form message", 
 			:body => @message).deliver
-		render "form_result"	
 	end
 end
