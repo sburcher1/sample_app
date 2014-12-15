@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
+      resources :users, only: [:edit, :update, :show]  
+      devise_for :users
+
   resources :products
+
 
 root :to => 'pages#landing_page'
     
