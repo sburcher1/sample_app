@@ -1,22 +1,22 @@
 class UsersController < ApplicationController
-	before_action :authenticate_user!
-	
-	load_and_authorize_resource
 
-	def show
-	end
+  before_action :authenticate_user!
 
-	def edit
-	end
+  load_and_authorize_resource
 
-	def update
-		@user.update_attributes(user_params)
-	end
+  def show
+  end
 
-  	private
+  def edit
+  end
 
-	def user_params
-	require(:user)
-	end
+  def update
+    @user.update_attributes(user_params)
+  end
 
+  private
+
+  def user_params
+    require(:user)
+  end
 end

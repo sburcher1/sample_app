@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-      resources :users, only: [:edit, :update, :show]  
-      devise_for :users
+    devise_for :users
+    resources :users, only: [:edit, :update, :show]  
+      
 
   resources :products
 
