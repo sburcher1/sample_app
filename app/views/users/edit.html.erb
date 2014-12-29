@@ -1,30 +1,42 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prevented your profile from being saved:</h2>
+<div class="container">
+  <div class ="row">
+    <div class="col-md-12">
 
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <h2>My Profile</h2>
+
+      <%= form_for(@user) do |f| %>
+        <% if @user.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@user.errors.count, "error") %> prevented your profile from being saved:</h2>
+
+            <ul>
+            <% @user.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+
+        <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+
+
+        <div class="field">
+          <%= f.label :companyname %><br>
+          <%= f.text_field :companyname %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+
       <% end %>
-      </ul>
+
+      <u><%= link_to "Reset my password", edit_user_registration_path %></u>
+
     </div>
-  <% end %>
-
-
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
   </div>
-
-
-  <div class="field">
-    <%= f.label :companyname %><br>
-    <%= f.text_field :companyname %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-
-<% end %>
+</div>
