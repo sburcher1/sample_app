@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     devise_for :users
     resources :users, only: [:edit, :update, :show]  
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :products
 
+  resources :articles, :path => 'blog' do
+  end
 
 root :to => 'pages#landing_page'
     
