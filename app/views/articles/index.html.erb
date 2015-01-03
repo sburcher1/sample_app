@@ -7,22 +7,24 @@
 
     <div class="col-md-8">
 
-
-
           <% @articles.each do |article| %>
-            <h4><%= link_to article.title, article %></h4>
-            <p><%= truncate(article.body, length: 400, separator: ' ') %> <%= link_to '(show more)', article %></p>
+            <p><i>Published&nbsp;<%= article.created_at.strftime("%B %d %Y") %></i></p>
+            <h4><%= link_to article.title, article %> </h4>
+            <p><%= truncate(article.body.humanize, length: 400, separator: ' ') %> <%= link_to '(show more)', article %></p>
             <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %><br>
           <% end %>
-      
+
+      <%= will_paginate @articles, :class => "digg_pagination"%>
       <br>
 
       <%= link_to 'Create New Article', new_article_path %><br>
 
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        Launch demo modal
+        Create New Article
       </button>
+
+  
 
     </div>
 
@@ -45,8 +47,11 @@
             *to add content*
         </div>
       </div>
-    
+
+  
     </div>
+
+      
 
   </div>
 </div>

@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   resources :articles, :path => 'blog' do
   end
 
+
+
 root :to => 'pages#landing_page'
-    
-    
+
   get 'landing_page', to: 'pages#landing_page'
 
   get 'contact', to: 'pages#contact'
