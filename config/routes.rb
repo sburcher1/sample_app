@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   resources :products
 
   resources :articles, :path => 'blog' do
+    resources :comments
   end
+
 
 
 
