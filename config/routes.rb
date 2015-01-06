@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     resources :users, only: [:edit, :update, :show]  
       
 
-  resources :products
+  resources :products do
+      resources :testimonials
+  end
 
   resources :articles, :path => 'blog' do
     resources :comments

@@ -31,6 +31,42 @@
 	<%= link_to 'Back', products_path %>
 	<%= link_to 'Destroy', product_path(@product),
             method: 'delete', confirm: 'Are you sure?' %>
+     <br><br>
+
+    <h4>Testimonials</h4>
+    <% @product.testimonials.each do |testimonial| %>
+	   <p>
+	    <strong>Name:</strong>
+	    <%= testimonial.name %>
+	  </p>
+	 
+	  <p>
+	    <%= testimonial.body %>
+	  </p>
+	    <i><%= link_to 'Delete Testimonial', [testimonial.product, testimonial],
+	                   method: :delete,
+	                   data: { confirm: 'Are you sure?' } %></i>	  
+<br><br>
+	<% end %>
+
+    <h4>Add a Testimonial</h4>
+	<%= form_for([@product, @product.testimonials.build]) do |f| %>
+		<p>
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		</p>
+		<p>
+			<%= f.label :email %>
+			<%= f.text_field :email %>
+		</p>
+		<p>
+			<%= f.label :body %>
+			<%= f.text_field :body %>
+		</p>
+		<p>
+			<%= f.submit %>
+		</p>
+	<% end %> 
 
 
 </div>
