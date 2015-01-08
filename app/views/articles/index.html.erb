@@ -8,16 +8,14 @@
     <div class="col-md-8">
 
           <% @articles.each do |article| %>
-            <p><i>Published&nbsp;<%= article.created_at.strftime("%B %d %Y") %></i></p>
             <h4><%= link_to article.title, article %> </h4>
+            <p><i>Published&nbsp;<%= article.created_at.strftime("%B %d %Y") %></i></p>
             <p><%= truncate(article.body.humanize, length: 400, separator: ' ') %> <%= link_to '(show more)', article %></p>
-            <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %><br>
+            <br>
           <% end %>
 
       <%= will_paginate @articles, :class => "digg_pagination"%>
       <br>
-
-      <%= link_to 'Create New Article', new_article_path %><br>
 
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -69,11 +67,7 @@
         <h4 class="modal-title" id="createarticlemodal">Create New Article</h4>
       </div>
       <div class="modal-body">
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <%= render 'form' %>
       </div>
     </div>
   </div>

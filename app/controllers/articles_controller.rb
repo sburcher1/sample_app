@@ -4,8 +4,10 @@ class ArticlesController < ApplicationController
   respond_to :html
 
   def index
-    @articles = Article.order(created_at: :desc).paginate(:page => params[:page], :per_page => 2)
+     @article = Article.new
+     @articles = Article.order(created_at: :desc).paginate(:page => params[:page], :per_page => 3)
     respond_with(@articles)
+
   end
 
   def show
