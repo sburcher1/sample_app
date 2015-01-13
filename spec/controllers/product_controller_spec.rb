@@ -1,30 +1,22 @@
-require 'rails_helper'
+require 'rails_helper' 
 
-describe ProductsController do
-
-  before do
-    @user = User.create(companyname: "Industry51")
-  end
-
-  describe "GET show" do
-    context "User is logged in" do
-      before do
-        session[:user_id] = @user.id # simulate a logged in user
-      end
-
-      it "should load the correct user details" do
-        get :show
-        expect(response.status).to eq 200
-        expect(assigns(:user)).to eq @user
-      end
+  describe ProductsController do 
+    
+    describe "GET #index" do 
+      it "populates an array of contacts"
+      get :index 
+      assigns(:products).should eq([product])
     end
 
-    context "No user is logged in" do
-      it "should redirect to login" do
-        get :show
-        expect(response).to redirect_to(log_in_path)
-      end
+    describe "GET #show" do 
+      it "assigns the requested contact to @contact" 
+      it "renders the :show template" 
     end
-  end
 
-end
+    describe "GET #new" do
+      it "assigns a new Contact to @contact" 
+      it "renders the :new template" 
+    end 
+
+
+  end
