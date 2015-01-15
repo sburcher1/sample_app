@@ -2,12 +2,11 @@ require 'rails_helper'
 
   describe User do
 
-  context "email present" do
+  context "companyname present" do
 
-    before { @user = User.new(email: "email1@gmail.com") }
-
-    it "should return user email" do
-      expect(@user.email).to eq "email1@gmail.com"
+    it "should return user companyname" do
+    	user = build(:user)
+      	expect(user.companyname).to eq "Research24"
     end
   end
 end
