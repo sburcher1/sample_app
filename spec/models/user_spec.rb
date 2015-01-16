@@ -5,7 +5,7 @@ require 'rails_helper'
   context "companyname present" do
 
     it "should return user companyname" do
-    	user = build(:user)
+    	FactoryGirl.user = build(:user)
       	expect(user.companyname).to eq "Research24"
     end
   end
