@@ -31,7 +31,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product}
-        flash[:notice] = "Product was successfully created!"
+        flash[:notice] = "Product was successfully create!"
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new }

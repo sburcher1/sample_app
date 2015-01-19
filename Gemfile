@@ -6,6 +6,10 @@ gem 'rails', '4.1.8'
 
 group :development do
   gem 'sqlite3'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'spork-rails'
+  gem 'guard-spork', :github => 'guard/guard-spork'
 end
 group :production do
   gem 'pg'
