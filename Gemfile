@@ -9,13 +9,14 @@ group :development do
   gem 'guard'
   gem 'guard-rspec', require: false
   gem 'spork-rails'
-  gem 'guard-spork', :github => 'guard/guard-spork'
+  gem 'guard-spork'
 end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.0'
 end
 
@@ -23,6 +24,8 @@ end
 gem 'sass-rails', '~> 4.0.3'
 # Use Devise for Authentication
 gem 'devise'
+# Use Stripe for Payments
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 # Use Cancancan for Authorisation
 gem 'cancancan'
 # Use Uglifier as compressor for JavaScript assets
