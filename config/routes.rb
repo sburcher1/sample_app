@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
     devise_for :users
     resources :users, only: [:edit, :update, :show]  
-      
+
 
   resources :products do
       resources :testimonials
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-
+  resources :payments
 
 
 root :to => 'pages#landing_page'
