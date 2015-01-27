@@ -2,19 +2,21 @@ class PaymentsController < ApplicationController
 
 	
 	def new
+
 	end
 
 	def create
 	  # Amount in cents
+	  @product = Product.find(params[:id])
 	  @amount = @product.price
 
 	  customer = Stripe::Customer.create(
-	    :email => user.email,
+	    :email => current_user.email,
 	    :card  => params[:stripeToken]
 	  )
 
 	  charge = Stripe::Charge.create(
-	    :customer    => customer.id,
+	    :customer    => current_user.id,
 	    :amount      => @amount,
 	    :description => 'Rails Stripe customer',
 	    :currency    => 'usd'
